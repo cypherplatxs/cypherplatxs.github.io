@@ -8,7 +8,7 @@ import astroLayouts from "astro-layouts";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://nofuss.lanceross.xyz",
+  site: "https://platohedro.org/",
   base: "/",
   markdown: {
     shikiConfig: {

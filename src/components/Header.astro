@@ -11,29 +11,39 @@ const navbar = [
     href: "/blog",
   },
   {
-    name: "Docs",
-    href: "/docs",
+    name: "$BAM",
+    href: "/bam",
   },
   {
-    name: "Whatever",
-    href: "#",
+    name: "about",
+    href: "/about",
   },
 ];
 
-const desktopIcons = "dark:text-zinc-300 text-black hover:text-zinc-500 dark:hover:text-zinc-400 hidden sm:block";
-const mobileIcons = "dark:text-zinc-300 text-black hover:text-zinc-500 dark:hover:text-zinc-400 sm:hidden";
+const desktopIcons =
+  "dark:text-zinc-300 text-black hover:text-zinc-500 dark:hover:text-zinc-400 hidden sm:block";
+const mobileIcons =
+  "dark:text-zinc-300 text-black hover:text-zinc-500 dark:hover:text-zinc-400 sm:hidden";
 ---
 
-<header class="bg-white dark:bg-zinc-900 text-lg dark:text-zinc-300 mx-auto max-w-6xl flex flex-row justify-between">
+<header
+  class="bg-white dark:bg-zinc-900 text-lg dark:text-zinc-300 mx-auto max-w-6xl flex flex-row justify-between"
+>
   <a href="/" class="mx-8 my-5 flex items-center" aria-label="Website Logo">
     <Icon name="lucide:mountain-snow" class="w-8 h-8" />
-    <span class="self-center sm:hidden text-2xl whitespace-nowrap dark:text-white ml-3 mt-1">NoFuss</span>
+    <span
+      class="self-center sm:hidden text-2xl whitespace-nowrap dark:text-white ml-3 mt-1"
+      >NoFuss</span
+    >
   </a>
   {
     (
       <nav class="pt-6 flex flex-row space-x-8">
         {navbar.map((navbar) => (
-          <a href={navbar.href} class="dark:text-zinc-300 text-black hover:text-zinc-500 dark:hover:text-zinc-400 hidden sm:block">
+          <a
+            href={navbar.href}
+            class="dark:text-zinc-300 text-black hover:text-zinc-500 dark:hover:text-zinc-400 hidden sm:block"
+          >
             {navbar.name}
           </a>
         ))}
@@ -49,7 +59,10 @@ const mobileIcons = "dark:text-zinc-300 text-black hover:text-zinc-500 dark:hove
     (
       <nav class="m-6 flex flex-col inline-flex space-y-3">
         {navbar.map((navbar) => (
-          <a href={navbar.href} class="dark:text-zinc-300 text-black hover:text-zinc-500 dark:hover:text-zinc-400 sm:hidden">
+          <a
+            href={navbar.href}
+            class="dark:text-zinc-300 text-black hover:text-zinc-500 dark:hover:text-zinc-400 sm:hidden"
+          >
             {navbar.name}
           </a>
         ))}
