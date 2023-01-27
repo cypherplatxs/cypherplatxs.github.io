@@ -8,7 +8,7 @@ import astroLayouts from "astro-layouts";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://platohedro.org/",
+  site: "https://cypherplatxs.github.io",
   base: "/",
   markdown: {
     shikiConfig: {
