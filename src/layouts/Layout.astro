@@ -11,13 +11,18 @@ export interface Props {
 }
 
 const defaultMeta = {
-  title: "NoFuss Astro",
-  description: "No fuss Astro Template for Landing, Blog and Docs page. No complicated design and setup, just start editing.",
+  title: "Cypherplatxs",
+  description: "Cypherplatxs: Layer 0 gardeners from Platohedro.org",
   image: "/banner.png",
   imageAlt: "Mountain Logo with NoFuss",
 };
 
-const { title = defaultMeta.title, description = defaultMeta.description, heroImage = defaultMeta.image, imageAlt = defaultMeta.imageAlt } = Astro.props as Props;
+const {
+  title = defaultMeta.title,
+  description = defaultMeta.description,
+  heroImage = defaultMeta.image,
+  imageAlt = defaultMeta.imageAlt,
+} = Astro.props as Props;
 const canonicalURL = new URL(Astro.url).href;
 
 const classBody =
@@ -55,14 +60,19 @@ const classBody =
     <meta name="author" content="Lance Ross" />
     <script is:inline>
       const primaryColorScheme = "none";
-      const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const darkModeMediaQuery = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
       const currentTheme = localStorage.getItem("theme");
 
       let theme;
       if (currentTheme) {
         theme = currentTheme === "dark" ? "dark" : "";
       } else {
-        if (primaryColorScheme === "dark" || (primaryColorScheme === "none" && darkModeMediaQuery)) {
+        if (
+          primaryColorScheme === "dark" ||
+          (primaryColorScheme === "none" && darkModeMediaQuery)
+        ) {
           theme = "dark";
         } else if (primaryColorScheme === "light") {
           theme = "";
