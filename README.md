@@ -18,7 +18,5 @@ Página informativa sobre $bam
 
 Información más detallada sobre cyphers, su propósito, etc
 
-## License ⚖️
 
-
-This repository has [MIT License](https://github.com/lancerossdev/no-fuss-astro/blob/main/LICENSE).
+[Web provicional](https://cypherplatxs.github.io/web/)
