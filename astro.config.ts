@@ -33,6 +33,7 @@ export default defineConfig({
           {
             default: "@layouts/Layout.astro",
             "pages/blog/**/*.mdx": "@layouts/BlogLayout.astro",
+            "pages/mems/**/*.mdx": "@layouts/BlogLayout.astro",
           },
         ],
       ],

@@ -1,0 +1,44 @@
+---
+import Layout from "@layouts/Layout.astro";
+import BlogCard from "@components/BlogCard.astro";
+
+interface Frontmatter {
+	title: string;
+	pubDate: string;
+	description: string;
+}
+const metadata = {
+	title: "Bam - Cypherplatxs",
+	description: "Layer 0 gardeners from Platohedro.org",
+};
+
+let blogs = await Astro.glob<Frontmatter>("./mems/*.mdx");
+blogs = blogs.sort(
+	(a, b) =>
+		new Date(b.frontmatter.pubDate).valueOf() -
+		new Date(a.frontmatter.pubDate).valueOf()
+);
+---
+
+<Layout {...metadata}>
+	<section>
+		<h1 class="text-4xl mb-6 dark:text-white">Mems</h1>
+		<p class="dark:text-zinc-300 mb-6">
+			Memories and acts of the cyheerplatx's meeting.
+		</p>
+	</section>
+	<section>
+		<ul>
+			{
+				blogs.map((post) => (
+					<BlogCard
+						title={post.frontmatter.title}
+						description={post.frontmatter.description}
+						pubDate={post.frontmatter.pubDate}
+						url={post.url}
+					/>
+				))
+			}
+		</ul>
+	</section>
+</Layout>

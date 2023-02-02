@@ -24,7 +24,8 @@ const defaultMeta = {
   imageAlt: "Mountain Logo with NoFuss",
 };
 
-const { heroImage = defaultMeta.image, imageAlt = defaultMeta.imageAlt } = Astro.props as Props;
+const { heroImage = defaultMeta.image, imageAlt = defaultMeta.imageAlt } =
+  Astro.props as Props;
 
 const classBody =
   "scrollbar-thin scrollbar-thumb-zinc-400 scrollbar-track-zinc-300 dark:scrollbar-thumb-zinc-600 dark:scrollbar-track-zinc-800 dark:bg-zinc-900 dark:text-white font-inter selection:bg-blue-500/70 text-xl";
@@ -51,8 +52,8 @@ const classBody =
     <meta property="og:locale" content="en_US" />
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content={canonicalURL} />
-    <meta name="twitter:site" content="@lancerossdev" />
-    <meta name="twitter:creator" content="@lancerossdev" />
+    <meta name="twitter:site" content="@platohedro" />
+    <meta name="twitter:creator" content="@platohedro" />
     <meta property="twitter:title" content={frontmatter.title} />
     <meta property="twitter:description" content={frontmatter.description} />
     <meta property="twitter:image" content={heroImage} />
@@ -61,14 +62,19 @@ const classBody =
     <meta name="author" content="Lance Ross" />
     <script is:inline>
       const primaryColorScheme = "none";
-      const darkModeMediaQuery = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      const darkModeMediaQuery = window.matchMedia(
+        "(prefers-color-scheme: dark)"
+      ).matches;
       const currentTheme = localStorage.getItem("theme");
 
       let theme;
       if (currentTheme) {
         theme = currentTheme === "dark" ? "dark" : "";
       } else {
-        if (primaryColorScheme === "dark" || (primaryColorScheme === "none" && darkModeMediaQuery)) {
+        if (
+          primaryColorScheme === "dark" ||
+          (primaryColorScheme === "none" && darkModeMediaQuery)
+        ) {
           theme = "dark";
         } else if (primaryColorScheme === "light") {
           theme = "";
@@ -112,7 +118,11 @@ const classBody =
         </article>
       </section>
       <div class="flex flex-row justify-between">
-        <a href="/blog" class="dark:text-blue-400 text-blue-600 hover:underline mt-5">Go back to posts</a>
+        <a
+          href="/blog"
+          class="dark:text-blue-400 text-blue-600 hover:underline mt-5"
+          >Go back to post</a
+        >
       </div>
     </main>
     <ThemeToggle />
