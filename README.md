@@ -22,8 +22,8 @@ Información más detallada sobre cyphers, su propósito, etc
 [Web provicional](https://cypherplatxs.github.io/web/)
 
 
-|      Comands      |  
-|---------|:-------:|
-| 1 |  yarn install | 
-| 2 |  yarn start   | 
-| 3 |  yarn build   | 
+|   	|   	|   	|   	|   	
+|---	|---	|---	|---	|
+|   	|  yanr install  	|   
+|   	|  yarn start     |   	   	
+|   	|   	|   	|    	|   	
