@@ -26,4 +26,4 @@ Información más detallada sobre cyphers, su propósito, etc
 |---	|---	|---	|---	|
 |   	|  yanr install  	|   
 |   	|  yarn start     |   	   	
-|   	|   	|   	|    	|   	
+|   	|  yarn buld    	|    	   	
