@@ -1,4 +1,4 @@
-# Cypherplaxs web 🚀
+# ☭ Cypherplatxs web ☭
 
 Hasta ahora está todo en inglés, en el futuro podremos integrar soporte para cambio de lenguaje.
 
@@ -19,11 +19,11 @@ Página informativa sobre $bam
 Información más detallada sobre cyphers, su propósito, etc
 
 
-[Web provicional](https://cypherplatxs.github.io/web/)
+[Web provicional](https://cypherplatxs.github.io)
 
 
 
 
-### ☭ 	yanr install 
-### ☭	  yarn start    
+### ☭ 	yarn install 
+### ☭	yarn start    
 ### ☭ 	yarn build    
