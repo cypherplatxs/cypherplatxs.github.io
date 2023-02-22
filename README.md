@@ -1,22 +1,29 @@
-# Cypherplaxs web 🚀
+# ☭ Cypherplatxs web ☭
 
 Hasta ahora está todo en inglés, en el futuro podremos integrar soporte para cambio de lenguaje.
 
-## Home
+## ☭ Home
 
 Acá va la información general y más superficial.
 
-## Blog
+##  ☭ Blog
 
 Se publicanos talleres, charlas y guías como entradas de blog.
 
-## $BAM
+## ☭ $BAM
 
 Página informativa sobre $bam
 
-## About
+##  ☭ About
 
 Información más detallada sobre cyphers, su propósito, etc
 
 
-[Web provicional](https://cypherplatxs.github.io/web/)
+[Web provicional](https://cypherplatxs.github.io)
+
+
+
+
+### ☭ 	yarn install 
+### ☭	yarn start    
+### ☭ 	yarn build    
