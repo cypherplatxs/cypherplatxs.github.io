@@ -3,6 +3,7 @@ import Layout from "@layouts/Layout.astro";
 import Footer from "@components/Footer.astro";
 import { homepage } from "@content/homepage";
 import Features from "@components/Features.astro";
+import Boton from "@components/Boton.astro";
 ---
 
 <Layout>
@@ -14,9 +15,11 @@ import Features from "@components/Features.astro";
 
     <h1 class="text-4xl mb-5 mt-5">Cypherplatxs</h1>
     <p class="">Layer 0 gardeners from Platohedro.org</p>
+    
+    <Boton></Boton>
+</section>
 
-    <a href="https://hubs.mozilla.com/link/6M5BxFd" target="_blank"> HUB </a>
-  </section>
+
   {
     homepage.map((homepage) => (
       <Features
@@ -41,3 +44,4 @@ import Features from "@components/Features.astro";
   </section>
   <Footer />
 </Layout>
+
