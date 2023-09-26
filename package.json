@@ -19,7 +19,7 @@
     "@fontsource/inter": "^4.5.14",
     "@tailwindcss/typography": "^0.5.8",
     "astro": "^1.6.12",
-    "astro-compress": "^1.0.12",
+    "astro-compress": "^2.0.15",
     "astro-icon": "^0.8.0",
     "astro-layouts": "^0.1.1",
     "prettier-plugin-astro": "^0.7.0",
@@ -32,4 +32,3 @@
     "@astrojs/react": "^2.1.0"
   }
 }
-
